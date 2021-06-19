@@ -1,0 +1,109 @@
+.homepage {
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+.homepage-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-content h1 {
+  font-size: 5vw;
+  font-weight: bold;
+}
+.homepage-content h5 {
+  color: #cb005f;
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+.homepage-content h6 {
+  font-size: 1.4vw;
+}
+.homepage-content button {
+  margin-top: 30px;
+  padding: 13px 30px;
+  background: none;
+  border: 2px solid gray;
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+.homepage-content button:hover {
+  border: 2px solid #cb005f;
+  transition: all 0.3s ease-in-out;
+}
+.home-social-media-icon {
+  margin-top: 6rem;
+}
+.home-social-media-icon .home-icons {
+  font-size: 2.5vw;
+  margin: 0px 30px;
+  cursor: pointer;
+}
+.home-social-media-icon .home-icons:hover {
+  color: #cb005f;
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+
+/* -------------media query------ */
+@media screen and (max-width: 800px) {
+  .homepage-content h1 {
+    font-size: 5.8vw;
+  }
+  .homepage-content h5 {
+    font-size: 2.6vw;
+  }
+  .homepage-content h6 {
+    font-size: 1.9vw;
+  }
+  .home-social-media-icon .home-icons {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 520px) {
+  .homepage-content h1 {
+    font-size: 7.5vw;
+  }
+  .homepage-content h5 {
+    font-size: 4vw;
+  }
+  .homepage-content h6 {
+    font-size: 3vw;
+  }
+  .home-social-media-icon .home-icons {
+    font-size: 8vw;
+  }
+  .homepage-content button {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homepage-content h1 {
+    font-size: 7.7vw;
+  }
+  .homepage-content h5 {
+    font-size: 4.7vw;
+  }
+  .homepage-content h6 {
+    font-size: 3.2vw;
+  }
+  .home-social-media-icon .home-icons {
+    font-size: 8vw;
+  }
+  .homepage-content button {
+    font-size: 4.2vw;
+  }
+  .home-social-media-icon .home-icons {
+    margin: 0px 20px;
+  }
+}

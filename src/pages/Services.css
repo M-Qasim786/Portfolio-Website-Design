@@ -1,0 +1,338 @@
+.services-div {
+  background-image: url(../images/design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+.color {
+  background-color: #ebebeb;
+  height: 185px;
+  width: 100%;
+  margin-top: 2rem;
+}
+.color > h6 {
+  display: none;
+}
+.services-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: auto;
+  width: 100%;
+}
+.services-div .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 10rem;
+}
+.text h6 {
+  color: #cb005f;
+  font-size: 1.9vw;
+  font-weight: 600;
+}
+.text h4 {
+  color: #ffffff;
+  font-size: 3.5vw;
+  font-weight: 600;
+}
+.text p {
+  color: #f3f0f0;
+  font-size: 1.2vw;
+  padding: 0.7rem 14rem;
+}
+@media screen and (max-width: 1050px) {
+  .services-div .text {
+    padding: 3rem 7rem;
+  }
+  .text h6 {
+    font-size: 3vw;
+  }
+  .text h4 {
+    font-size: 4.7vw;
+  }
+  .text p {
+    font-size: 1.8vw;
+    padding: 0.4rem 5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .services-div .text {
+    padding: 2rem 5rem;
+  }
+  .text h6 {
+    font-size: 3.5vw;
+  }
+  .text h4 {
+    font-size: 5vw;
+  }
+  .text p {
+    font-size: 2.2vw;
+    padding: 0.4rem 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .services-div .text {
+    padding: 2rem 1rem;
+  }
+  .text h6 {
+    font-size: 5.4vw;
+  }
+  .text h4 {
+    font-size: 6.9vw;
+  }
+  .text p {
+    font-size: 3.2vw;
+    padding: 0.4rem 1rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .services-div .text {
+    padding: 2rem 0.5rem;
+  }
+  .text h6 {
+    font-size: 6.7vw;
+  }
+  .text h4 {
+    font-size: 8.7vw;
+  }
+  .text p {
+    font-size: 4.1vw;
+    padding: 0.4rem 0.5rem;
+  }
+}
+/* -----carasoul style------ */
+
+.carrousel {
+  text-align: center;
+  padding: 4em 0;
+  height: 24em;
+  max-width: 100%;
+  margin: auto;
+  margin-top: -10rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrousel .slides {
+  width: 200%;
+  left: 0;
+  padding-left: 0;
+  padding-top: 1em;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+}
+.carrousel .slides li {
+  width: 16.6%;
+  position: relative;
+  float: left;
+}
+.carrousel .slidesNavigation {
+  display: block;
+  list-style: none;
+  text-align: center;
+  bottom: 1em;
+
+  position: absolute;
+
+  width: 104px;
+  left: 50%;
+  margin-left: -52px;
+}
+.carrousel input {
+  display: none;
+}
+.carrousel .slidesNavigation label {
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 15px;
+  width: 15px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 3px #cb005f;
+  font-size: 0;
+}
+
+#radio-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#radio-2:checked ~ .slides {
+  transform: translateX(-25%);
+}
+#radio-3:checked ~ .slides {
+  transform: translateX(-50%);
+}
+#radio-4:checked ~ .slides {
+  transform: translateX(-75%);
+}
+
+.carrousel .slidesNavigation label:hover {
+  cursor: pointer;
+}
+
+.carrousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carrousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4,
+.carrousel #radio-5:checked ~ .slidesNavigation label#dotForRadio-5,
+.carrousel #radio-6:checked ~ .slidesNavigation label#dotForRadio-6,
+.carrousel #radio-7:checked ~ .slidesNavigation label#dotForRadio-7 {
+  background: #cb005f;
+}
+.carasoul-icon {
+  font-size: 55px;
+  color: #cb005f;
+  margin: 20px 0px;
+}
+.slides h5 {
+  color: #ffffff;
+}
+.slides p {
+  color: gray;
+  padding: 0.7rem 2.7rem;
+  font-size: 17px;
+}
+#dotForRadio-4 {
+  display: none;
+}
+#dotForRadio-5 {
+  display: none;
+}
+#dotForRadio-6 {
+  display: none;
+}
+#dotForRadio-7 {
+  display: none;
+}
+/* -------media query------ */
+@media screen and (max-width: 1050px) {
+  .carrousel {
+    padding: 4em 0;
+    height: 30em;
+    margin-top: -6rem;
+  }
+  .carrousel .slides {
+    width: 200%;
+  }
+  .carrousel .slides li {
+    width: 16.6%;
+  }
+}
+@media screen and (max-width: 990px) {
+  #dotForRadio-4 {
+    display: block;
+  }
+  .carrousel {
+    padding: 4em 0;
+    height: 27em;
+    margin-top: -6rem;
+  }
+  .carrousel .slides {
+    width: 300%;
+  }
+  .carrousel .slides li {
+    width: 16.6%;
+  }
+  #radio-1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  #radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+  }
+  #radio-3:checked ~ .slides {
+    transform: translateX(-33%);
+  }
+  #radio-4:checked ~ .slides {
+    transform: translateX(-67%);
+  }
+}
+@media screen and (max-width: 700px) {
+  #dotForRadio-4 {
+    display: block;
+  }
+  #dotForRadio-5 {
+    display: block;
+  }
+  #dotForRadio-6 {
+    display: block;
+  }
+  #dotForRadio-7 {
+    display: block;
+  }
+  .carrousel {
+    padding: 4em 0;
+    height: 27em;
+    margin-top: -6rem;
+  }
+  .carrousel .slides {
+    width: 600%;
+  }
+  .carrousel .slides li {
+    width: 16.6%;
+  }
+  .slides p {
+    color: gray;
+    padding: 0.7rem 5rem;
+    font-size: 17px;
+  }
+  .carrousel .slidesNavigation {
+    width: 200px;
+  }
+
+  #radio-1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  #radio-2:checked ~ .slides {
+    transform: translateX(-25%);
+  }
+  #radio-3:checked ~ .slides {
+    transform: translateX(-16.5%);
+  }
+  #radio-4:checked ~ .slides {
+    transform: translateX(-33%);
+  }
+  #radio-5:checked ~ .slides {
+    transform: translateX(-49.6%);
+  }
+  #radio-6:checked ~ .slides {
+    transform: translateX(-66.2%);
+  }
+  #radio-7:checked ~ .slides {
+    transform: translateX(-82.8%);
+  }
+}
+@media screen and (max-width: 500px) {
+  #radio-1:checked ~ .slides {
+    transform: translateX(0.4%);
+  }
+  .slides p {
+    color: gray;
+    padding: 0.7rem 3rem;
+    font-size: 17px;
+  }
+  .carrousel .slidesNavigation {
+    margin-left: -70px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #radio-1:checked ~ .slides {
+    transform: translateX(0.4%);
+  }
+  .slides p {
+    color: gray;
+    padding: 0.7rem 1rem;
+    font-size: 16px;
+  }
+  .carrousel .slidesNavigation {
+    margin-left: -65px;
+  }
+}

@@ -1,0 +1,223 @@
+.resume-div {
+  background-color: #ebebeb;
+  margin: 7rem 0rem;
+}
+.credential {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7rem 10rem;
+}
+.credential h4 {
+  font-size: 2.7vw;
+  padding: 0.5rem 0rem;
+  font-weight: 600;
+}
+.credential h6 {
+  color: #cb005f;
+  text-decoration: underline;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.credential p {
+  font-size: 1.3vw;
+  padding: 0rem 11.5rem;
+}
+/* ----------------media query------------- */
+@media screen and (max-width: 1050px) {
+  .credential {
+    padding: 4rem 0rem;
+  }
+  .credential h4 {
+    font-size: 4.5vw;
+    padding: 0.3rem 0rem;
+  }
+  .credential h6 {
+    font-size: 2.5vw;
+  }
+  .credential p {
+    font-size: 2vw;
+    padding: 0rem 3.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resume-div {
+    margin: 2rem 0rem;
+  }
+  .credential {
+    padding: 4rem 0rem;
+  }
+  .credential h4 {
+    font-size: 6.5vw;
+    padding: 0.3rem 0rem;
+  }
+  .credential h6 {
+    font-size: 4vw;
+  }
+  .credential p {
+    font-size: 2.5vw;
+    padding: 0rem 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .resume-div {
+    margin: 1rem 0rem;
+  }
+  .credential {
+    padding: 4rem 0rem;
+  }
+  .credential h4 {
+    font-size: 7.9vw;
+    padding: 0.3rem 0rem;
+  }
+  .credential h6 {
+    font-size: 5.6vw;
+  }
+  .credential p {
+    font-size: 4vw;
+    padding: 0rem 1rem;
+  }
+}
+.heading {
+  text-align: center;
+  color: #cb005f;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+.work-experi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  margin: 3rem 10rem;
+  padding: 0rem 10rem;
+}
+.digrees {
+  padding-right: 5rem;
+  border-right: 1px solid gray;
+}
+.digrees h6 {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.experience {
+  margin-left: 1rem;
+}
+.experience h6 {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.hat-icon {
+  margin-left: -1rem;
+  margin-top: -9rem;
+  font-size: 2vw;
+}
+/* ----------media query------- */
+@media screen and (max-width: 1050px) {
+  .work-experi {
+    margin: 3rem 1rem;
+    padding: 0rem 10rem;
+  }
+  .heading {
+    font-size: 3.2vw;
+  }
+  .digrees h6 {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  .experience h6 {
+    font-size: 3vw;
+  }
+  .hat-icon {
+    margin-left: -1.3rem;
+    margin-top: -9rem;
+    font-size: 3.2vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  .work-experi {
+    margin: 3rem 1rem;
+    padding: 0rem 5rem;
+  }
+  .digrees {
+    padding-right: 2rem;
+  }
+  .experience {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .work-experi {
+    display: block;
+    margin: 3rem 1rem;
+    padding: 0rem 1rem;
+  }
+  .heading {
+    font-size: 5vw;
+  }
+  .digrees {
+    padding-right: 0rem;
+    border-left: 2px solid gray;
+    border-right: 0px solid gray;
+  }
+  .digrees h6 {
+    font-size: 3.6vw;
+    padding-left: 0.5rem;
+  }
+  .digrees p {
+    padding-left: 0.5rem;
+  }
+  .experience {
+    margin-left: 0rem;
+  }
+  .experience h6 {
+    font-size: 3.6vw;
+  }
+  .hat-icon {
+    margin-left: -1.3rem;
+    margin-top: -10rem;
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work-experi {
+    margin: 3rem 1rem;
+    padding: 0rem 1rem;
+  }
+  .heading {
+    font-size: 6vw;
+  }
+
+  .digrees h6 {
+    font-size: 5.5vw;
+    padding-left: 0.5rem;
+  }
+  .experience h6 {
+    font-size: 5.5vw;
+  }
+  .hat-icon {
+    margin-left: -1.1rem;
+    margin-top: -10rem;
+    font-size: 6vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .heading {
+    font-size: 7vw;
+  }
+
+  .digrees h6 {
+    font-size: 6.2vw;
+    padding-left: 0.5rem;
+  }
+  .experience h6 {
+    font-size: 6.2vw;
+  }
+  .hat-icon {
+    margin-left: -1rem;
+    margin-top: -10rem;
+    font-size: 7.2vw;
+  }
+}

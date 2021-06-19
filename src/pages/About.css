@@ -1,0 +1,144 @@
+.aboutpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  margin: 40px;
+}
+.about-image {
+  flex: 20%;
+}
+.about-image > img {
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid white;
+  float: right;
+}
+.about-content {
+  flex: 50%;
+  margin: 20px;
+}
+.about-content > h6 {
+  color: #cb005f;
+  text-decoration: underline;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+.about-content > h4 {
+  font-size: 3vw;
+}
+.about-content > p {
+  padding: 30px 0px;
+  margin-right: 13rem;
+  /* font-size: 1.5vw; */
+  font-weight: lighter;
+}
+/* ------media query------- */
+@media screen and (max-width: 850px) {
+  .aboutpage {
+    display: block;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .about-image > img {
+    height: 100%;
+    width: 100%;
+    float: left;
+  }
+  .about-content {
+    flex: 50%;
+    margin: 0px;
+  }
+  .about-content > p {
+    padding: 0px 10px;
+    margin-right: 0rem;
+  }
+  .about-content > h6 {
+    font-size: 5vw;
+  }
+  .about-content > h4 {
+    font-size: 5.3vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .about-content > h6 {
+    font-size: 5.8vw;
+  }
+  .about-content > h4 {
+    font-size: 6vw;
+  }
+}
+
+.aboutpage-div {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 15rem;
+}
+.aboutpage-div h5 {
+  font-weight: 600;
+}
+.aboutpage-div h4 {
+  margin: 20px 0px;
+  font-weight: 600;
+}
+.profile {
+  flex: 50%;
+}
+.profile button {
+  background: none;
+  padding: 12px;
+  width: 55%;
+  margin-top: 3.7rem;
+  border: 2px solid black;
+  color: #000;
+  font-weight: bold;
+}
+.profile button:hover {
+  border: 2px solid #cb005f;
+  color: #cb005f;
+  transition: all 0.3s ease;
+}
+.skills {
+  flex: 50%;
+}
+.skills h6 {
+  margin-top: 2rem;
+}
+.skills button {
+  background-color: rgb(37, 33, 33);
+  padding: 12px;
+  width: 55%;
+  margin-top: 3.7rem;
+  border: 2px solid black;
+  color: #ffffff;
+  font-weight: 700;
+}
+.skills button:hover {
+  background-color: black;
+  transition: all o.3s ease;
+}
+/* ------media query----- */
+@media screen and (max-width: 900px) {
+  .aboutpage-div {
+    display: block;
+    justify-content: left;
+    margin: 4rem 2rem;
+  }
+  .skills button {
+    margin: 2rem 0rem;
+  }
+  .profile button {
+    margin: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .aboutpage-div h4 {
+    text-decoration: underline;
+  }
+  .skills button {
+    width: 80%;
+  }
+  .profile button {
+    width: 80%;
+  }
+}
